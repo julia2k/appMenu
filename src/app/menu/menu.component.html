@@ -1,0 +1,9 @@
+  
+<div class="container">
+  <h3>Choose your menu:</h3>
+  <div class="btn-group" role="group" *ngFor="let menuDish of menu">
+    <button type="button" class="btn btn-success mr-2 btn-sm" (click)="chooseMenuCourse(menuDish)" >{{menuDish.dish}}</button> 
+  </div>
+</div>
+<br>
+<app-course [courseNames]="courseNames" [dishName]="dishName"></app-course>

@@ -1,0 +1,26 @@
+.container{
+    margin: 25px auto;
+    background:#F6F3F3;
+    padding:30px;
+    border: 1px solid #C3BEBE;
+    box-sizing: border-box;
+}
+ul {
+    text-align: right;
+    list-style: none;
+
+}
+h5,h2{
+    text-align: right;
+}
+img{
+    width: 100%;
+    border: 3px solid #C3BEBE;
+}
+#ingridients li{
+ font-size: 11pt;
+}
+#collapse{
+    text-align: left;
+    padding-left:0 ;
+}

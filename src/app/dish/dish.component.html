@@ -1,0 +1,29 @@
+<div class="container" *ngIf="dishN">
+  
+  <div class="row">
+    <div class="col-md-7 col-sm-12">
+      <img src="{{dishN.image}}" alt="{{dishN.name}}">
+    </div>
+    <div class="col-md-5 col-sm-12">
+      <h2>{{dishN.name}}</h2> 
+      <br>
+      <h5 ><i>Ingredients:</i></h5>
+      
+      <ul id="ingridients">
+        <li *ngFor="let dishIngridients of dishN.ingridients">{{dishIngridients}}</li>
+      </ul>
+      <div class="clearfix mb-5">
+        <button class="btn float-left btn-outline-success" (click)="toggle()">Recipe ...<span>⇩</span></button>
+        <button class="btn float-right btn-outline-success" (click)="addToCart(this.dishN.ingridients)">Add ingredients to cart</button>
+      </div>
+      <ul *ngIf="isCollapsed" id="collapse">
+        <li *ngFor="let recipeItem of dishN.resipe">{{recipeItem}}</li>
+      </ul>
+      
+    </div>
+  </div>
+
+
+
+  
+</div>

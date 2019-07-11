@@ -1,0 +1,11 @@
+<div id="nav" >
+  <div class="container">
+    <a [routerLink]="['/']">
+      <h1>Shopping List</h1>
+    </a>
+    <a [routerLink]="['/cart']"><i class="material-icons">shopping_cart</i><span>List</span>
+      <div id="items" *ngIf="list.length>0">{{list.length}}</div>
+    </a>
+    
+  </div>
+</div>

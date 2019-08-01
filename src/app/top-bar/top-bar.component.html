@@ -1,11 +1,15 @@
 <div id="nav" >
-  <div class="container">
-    <a [routerLink]="['/']">
-      <h1>Shopping List</h1>
-    </a>
-    <a [routerLink]="['/cart']"><i class="material-icons">shopping_cart</i><span>List</span>
-      <div id="items" *ngIf="list.length>0">{{list.length}}</div>
-    </a>
-    
+  <div class="container flex">
+    <div class="col-5">
+      <a [routerLink]="['/']">
+        <h1>Shopping List</h1>
+      </a>
+    </div>
+    <div class="flex">
+        <a [routerLink]="['/signup']" class="mr-4">Sign Up</a>
+        <a [routerLink]="['/cart']" class="flex"><i class="material-icons">shopping_cart</i><span>List</span>
+          <div id="items" *ngIf="list.length>0">{{list.length}}</div>
+        </a>
+    </div>
   </div>
 </div>

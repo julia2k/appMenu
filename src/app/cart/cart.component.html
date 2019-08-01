@@ -1,5 +1,5 @@
 <div class="container" >
- <table *ngIf="items.length>0">
+ <table *ngIf="items.length>0" class="col-md-8 offset-md-2 mb-3">
    <tr>
      <th>#</th>
      <th class="text-left">Ingridient</th>
@@ -19,7 +19,7 @@
      <td><button class="btn btn-warning btn-xs" (click)="deleteIngr(item)">X</button></td>
    </tr>
  </table>
- <form (submit)="addIng(ingr.value)">
+ <form (submit)="addIng(ingr.value)" class="col-md-8 offset-md-2 p-0">
     <div class="form-group">
       <label for="ingr">Add more ingredients to list:</label>
       <input type="text" id="ingr" placeholder="Enter ingredients" class="form-control" #ingr>

@@ -12,7 +12,8 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { CartComponent } from './cart/cart.component';
 import { RouterModule } from '@angular/router';
 import { CartService } from './cart.service';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 
 @NgModule({
@@ -23,16 +24,19 @@ import { FormsModule } from '@angular/forms';
     DishComponent,
     FooterComponent,
     TopBarComponent,
-    CartComponent
+    CartComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: MenuComponent },
       { path: 'cart', component: CartComponent },
+      { path: 'signup', component: SignUpComponent },
     ])
   ],
   providers: [MenuService,

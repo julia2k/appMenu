@@ -5,7 +5,7 @@
     width:100%;
     color:white;
 }
-.container, a{
+.flex{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -28,4 +28,12 @@
     font-weight: bold;
     text-align: center;
     margin-left: 5px;
+}
+@media screen and ( max-height: 600px){
+    h1{
+        font-size: 1.5em;
+    }
+    a{
+        font-size: 1em;
+    }
 }

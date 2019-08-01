@@ -1,7 +1,7 @@
 
 <div class="container" *ngIf="courseNames">
   <h5>Choose dish from {{courseNames.dish}}</h5>
-   <button class="btn btn-outline-success mr-2 btn-sm" 
+   <button class="btn btn-outline-success mr-2 btn-sm mb-2" 
       *ngFor="let dishName of courseNames.courseList" (click)="chooseCourseDish(dishName)">
       {{dishName.name}} 
   </button> 
